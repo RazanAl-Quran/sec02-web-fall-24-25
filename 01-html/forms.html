@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="username">Username </label>
+        <input type="text" placeholder="Ex: Razan126" id="username" required>
+
+        <br>
+        <label for="password"> password </label>
+        <input type="password" id="password">
+
+        <br>
+        <input type="email">
+
+        <br>
+        <!-- checkbox -->
+        <input type="checkbox" id="Java" name="language1" value="Java" checked>
+        <label for="language1"> Java </label><br>
+        <input type="checkbox" id="C" name="language2" value="C">
+        <label for="language2"> C </label><br>
+        <input type="checkbox" id="Python" name="language3" value="Python">
+        <label for="language3"> Python </label>
+
+
+        <!-- radio button -->
+        <p>Please select your age:</p>
+        <input type="radio" id="age1" name="age" value="30">
+        <label for="age1">0 - 30</label><br>
+        <input type="radio" id="age2" name="age" value="60">
+        <label for="age2">31 - 60</label><br>
+        <input type="radio" id="age3" name="age" value="100">
+        <label for="age3">61 - 100</label>
+        <br><br>
+
+        <!-- number -->
+        <input type="number" id="quantity" name="quantity" min="1" max="5" step="1">
+        <br><br>
+
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <br><br>
+
+ <!-- datalist -->
+        <label> Choose your favourite browser</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br><br>
+
+         <!-- color -->
+         <label for="favcolor">Select your favorite color:</label>
+         <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+         <br><br>
+ 
+         <!-- date -->
+         <label for="birthday">Birthday:</label>
+         <input type="date" id="birthday" name="birthday">
+         <br><br>
+
+        <br>
+        <br>
+        <input type="submit" value="Sign Up">
+
+
+    </form>
+</body>
+
+</html>

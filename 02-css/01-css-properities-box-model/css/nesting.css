@@ -1,0 +1,28 @@
+.div1 p {
+    color: aqua;
+}
+
+#lorem {
+    color: chocolate;
+}
+
+.tamim1 #tamim2 p {
+    color: red;
+}
+
+#expedita {
+    color: orange;
+}
+.hello {
+    color: green;
+}
+
+p {
+    /* color: brown !important; */
+    color: brown;
+}
+
+
+#helloid {
+    color: chartreuse;
+}

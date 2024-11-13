@@ -1,0 +1,15 @@
+/* h1 {
+    color: aqua;
+}
+
+h2 {
+    color: aqua;
+}
+
+#zaid {
+    color: aqua;
+} */
+
+h1, .yaman, #zaid {
+    color: aqua;
+}

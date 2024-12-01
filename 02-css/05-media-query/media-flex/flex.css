@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    /* flex-flow: row wrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Mobile */
+/* selects any direct child elements (of any type) within elements having the class .container. */
+.container > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    /* grow 1 and initial width 100% */
+    /* This sets the initial size of the flex item to 100% of the container's width (or the parent's size in the direction of the flex flow). */
+    border-radius: 5px;
+}
+
+.header {
+    background-color: #e63946;
+    height: 120px;
+}
+
+.footer {
+    background-color: #a8dadc;
+    height: 80px;
+}
+
+.main {
+    text-align: left;
+    background-color: #b7e4c7;
+    height: 300px;
+    font-size: 24px;
+}
+
+.aside1 {
+    background-color: #f5cac3;
+}
+
+.aside2 {
+    background-color: #f28482;
+}
+
+/* min-width: 480px means when the screen is equal to 480px and larger */
+@media screen and (min-width:480px) {
+    .aside {
+        flex: 1 0 0%; 
+        /* flex-grow:1; */
+      
+    }
+}
+
+/* min-width: 800px means when the screen is equal to 800px and larger */
+@media screen and (min-width:800px) {
+    .main {
+        flex: 3 0 0%;
+    }
+    .aside1 {
+        order: 1;
+        flex-grow: 1;
+    }
+    .aside2 {
+        order: 3;
+        flex-grow: 1;
+    }
+    .main {
+        order: 2;
+        flex-grow: 3;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+
+/* 
+flex: 1 1 100%;
+flex-grow: 1
+This means the flex item will grow to fill the available space if there's any left after the initial layout.
+
+flex-shrink: 1
+This means the flex item will shrink proportionally with other flex items if the container is smaller than the total size of its items.
+
+flex-basis: 100%
+This sets the initial size of the flex item to 100% of the container's width (or the parent's size in the direction of the flex flow). */

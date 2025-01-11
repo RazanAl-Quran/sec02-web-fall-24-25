@@ -6,6 +6,7 @@ include 'connect.php';
 
 if (isset($_POST['adduser'])) {
     print_r($_POST);
+    
     $name = $_POST['name'];
     $salary = $_POST['salary'];
 
